@@ -58,7 +58,7 @@ def main(args):
     ehr_adj_path = '../data/ehr_adj_final.pkl'
     ddi_adj_path = '../data/ddi_A_final.pkl'
     ddi_mask_path = '../data/ddi_mask_H.pkl'
-    device = torch.device('cuda')
+    device = torch.device('cpu')
 
     data = dill.load(open(data_path, 'rb'))
     voc = dill.load(open(voc_path, 'rb'))

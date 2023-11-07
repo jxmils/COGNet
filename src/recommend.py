@@ -28,8 +28,8 @@ from util import llprint, sequence_metric, sequence_metric_v2, sequence_output_p
 torch.manual_seed(1203)
 
 # 读取disease跟proc的英文名
-icd_diag_path = '../data/D_ICD_DIAGNOSES.csv'
-icd_proc_path = '../data/D_ICD_PROCEDURES.csv'
+icd_diag_path = '/home/ugrad3/jamiller/COGNet/data/mimic-iii/D_ICD_DIAGNOSES.csv'
+icd_proc_path = '/home/ugrad3/jamiller/COGNet/data/mimic-iii/D_ICD_PROCEDURES.csv'
 code2diag = {}
 code2proc = {}
 with open(icd_diag_path, 'r') as f:
