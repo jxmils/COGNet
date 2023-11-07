@@ -1,4 +1,19 @@
-In order to get the code to work I had to add the following to models.py:
+Make sure to add the mimic-iii file inside data and download https://drive.google.com/file/d/1mnPc0O0ztz0fkv3HF-dpmBb8PLWsEoDz/view?usp=sharing and place it inside data as well
+
+
+Make sure to change the directory paths found in:
+```
+vim processing.py
+
+# line 310-312
+# med_file = '/data/mimic-iii/PRESCRIPTIONS.csv'
+# diag_file = '/data/mimic-iii/DIAGNOSES_ICD.csv'
+# procedure_file = '/data/mimic-iii/PROCEDURES_ICD.csv'
+```
+
+To create a conda environment from the yaml: 
+conda env create -f mimic_env.yaml
+
 
 ```
 def CopyDrug_batch(drugs, diags, procs, train_flag=True):
