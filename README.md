@@ -10,7 +10,7 @@
     - train/test baselines:
         - MICRON.py
         - Other code of train/test baselines can be find [here](https://github.com/ycq091044/SafeDrug).
-    - models.py: baseline models
+    - models.py: baseline models, where four functions with names starting "Copy" are copied from somewhere else. 
     - util.py
     - layer.py
 - data/ **(For a fair comparision, we use the same data and pre-processing scripts used in [Safedrug](https://github.com/ycq091044/SafeDrug))**
